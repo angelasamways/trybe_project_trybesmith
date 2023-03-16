@@ -4,9 +4,15 @@ export interface Product {
   amount: string;
 }
 export interface User {
-  i?:number
+  id?:number
   username: string,
   vocation: string;
   level: number;
   password: string;
+}
+
+export interface Order {
+  id: number;
+  userId: number,
+  productsIds: number[],
 }
