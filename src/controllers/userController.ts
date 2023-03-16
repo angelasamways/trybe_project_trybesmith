@@ -8,10 +8,10 @@ class UserController {
     const newUser = req.body;
 
     const token = await this.userService.create(newUser);
-    console.log('userToken no Controller');
-    console.log(token);
-    console.log('newUser no Controller');
-    console.log(newUser);
+    // console.log('userToken no Controller');
+    // console.log(token);
+    // console.log('newUser no Controller');
+    // console.log(newUser);
     
     res.status(201).json({ token });
   };

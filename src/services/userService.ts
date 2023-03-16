@@ -13,10 +13,10 @@ class UserService {
   public async create(newUser: User): Promise<string> {
     const result = await this.model.create(newUser);
     const userToken = token.createToken(result);
-    console.log('newUser no Service');
-    console.log(newUser);
-    console.log('userToken no Service');
-    console.log(userToken);
+    // console.log('newUser no Service');
+    // console.log(newUser);
+    // console.log('userToken no Service');
+    // console.log(userToken);
     
     return userToken;
   }

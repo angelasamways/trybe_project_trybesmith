@@ -19,10 +19,10 @@ export default class UserModel {
     const [dataInserted] = result;
     const { insertId } = dataInserted;
     const newUser = { id: insertId, username, vocation, level, password };
-    console.log('user no Model');
-    console.log(user);
-    console.log('newUser no Model');
-    console.log(newUser);
+    // console.log('user no Model');
+    // console.log(user);
+    // console.log('newUser no Model');
+    // console.log(newUser);
     return newUser;
   }
 }
